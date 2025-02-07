@@ -1,3 +1,4 @@
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support my work on Ko-fi', '#18448f', 'W7W719GL7S');kofiwidget2.draw();</script> 
 document.addEventListener('DOMContentLoaded', function() {
     // GSAP animations
     gsap.from("header h1", {duration: 1, y: -50, opacity: 0, ease: "bounce"});
