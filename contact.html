@@ -43,7 +43,12 @@
     <main class="container mx-auto p-4 mt-16">
         <section class="my-12">
             <h2 class="text-3xl font-bold mb-4">Formulário de Contato</h2>
-            <form action="mailto:eduardomateustvs@gmail.com" method="POST" enctype="multipart/form-data" class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+            <form action="https://formspree.io/f/xaneaadn" method="POST" class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg" id="contato-form">
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="#">
+
                 <div class="mb-4">
                     <label for="nome" class="block text-xl font-medium">Nome</label>
                     <input type="text" id="nome" name="nome" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
@@ -62,6 +67,11 @@
                 <div class="mb-4">
                     <label for="mensagem" class="block text-xl font-medium">Mensagem</label>
                     <textarea id="mensagem" name="mensagem" rows="4" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                </div>
+
+                <!-- Mensagem de sucesso -->
+                <div id="mensagem-sucesso" class="hidden text-green-500 text-center font-semibold mb-4">
+                    Obrigado! Sua mensagem foi enviada com sucesso.
                 </div>
 
                 <div class="text-center">
@@ -94,8 +104,8 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- FontAwesome para ícones -->
+
+    <script src="sucess_message.js"></script>
 </body>
 
 </html>
-
-   
