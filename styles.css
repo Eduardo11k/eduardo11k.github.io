@@ -78,3 +78,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+video {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+}
