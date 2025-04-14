@@ -62,26 +62,4 @@ footer {
 }
 
 /* Para telas menores que 768px (mobile/tablets) */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    padding: 10px;
-  }
 
-  body {
-    font-size: 16px;
-  }
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-video {
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  display: block;
-  margin: 0 auto;
-}
