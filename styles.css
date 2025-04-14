@@ -54,3 +54,27 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/* Estilo padrão para desktops */
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Para telas menores que 768px (mobile/tablets) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
