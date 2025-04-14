@@ -12,7 +12,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('./42luanda.png') no-repeat center center/cover;
 }
 
 .bg-dark {
