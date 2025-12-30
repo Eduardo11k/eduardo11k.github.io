@@ -1,56 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eduardo's Portfolio">
-    <title>Portfólio - DevWriter</title>
+    <meta name="description" content="Portfolio de Eduardo Mateus">
+    <title>Portfolio - DevWriter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7227762102795950"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7227762102795950" crossorigin="anonymous"></script>
 </head>
-
-<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-    <nav class="bg-gray-800 text-white p-4 fixed w-full z-10 top-0">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold">DevWriter</a>
-            <div>
-                <a href="index.html" class="mx-2">Início</a>
-                <a href="about.html" class="mx-2">Sobre Mim</a>
-                <a href="blog.html" class="mx-2">Blog</a>
-                <a href="contact.html" class="mx-2">Contato</a>
+<body>
+    <div id="particles-js"></div>
+    <div class="logo-container">
+        <div class="logo-image">
+            <img src="pexels-cottonbro-5474037.jpg" alt="DevWriter Logo" id="logo">
+        </div>
+    </div>
+    <nav class="nav-main">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <span class="brand-bracket">&lt;</span>
+                <span class="brand-text">DevWriter</span>
+                <span class="brand-bracket">/&gt;</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i><span>Início</span></a>
+                <a href="about.html" class="nav-link"><i class="fas fa-user-circle"></i><span>Sobre</span></a>
+                <a href="blog.html" class="nav-link"><i class="fas fa-blog"></i><span>Blog</span></a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i><span>Contato</span></a>
             </div>
+            <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
         </div>
     </nav>
-    <main class="container mx-auto p-4 mt-16">
-        <section class="my-12">
-            <h1 class="text-5xl font-bold mb-4">Portfólio</h1>
-            <div class="grid md:grid-cols-3 gap-4">
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-2">Projeto 1</h3>
-                    <p>Bobhelper- Bot Discord.</p>
-                    <a href="https://github.com/Eduardo11k/project1" class="text-blue-500 hover:underline">Veja no GitHub</a>
+    <header class="hero hero-simple">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-glitch" data-text="PORTFOLIO">PORTFOLIO</div>
+            <p class="hero-subtitle-static">Meus projetos e trabalhos</p>
+        </div>
+    </header>
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Projetos</span>
+                <h2 class="section-title">Meus <span class="highlight">Trabalhos</span></h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="zoom-in">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Eduardo11k/Bobhelper" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Discord Bot</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <h3 class="project-title">Bobhelper</h3>
+                        <p class="project-desc">Bot Discord multifuncional com comandos de moderação, música e utilidades para servidores.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> Featured</span>
+                            <span><i class="fas fa-code-branch"></i> Open Source</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-2">Projeto 2</h3>
-                    <p>Criação do meu website - Euzinho.</p>
-                    <a href="https://github.com/Eduardo11k/project2" class="text-blue-500 hover:underline">Veja no GitHub</a>
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Eduardo11k/eduardo11k.github.io" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Portfolio</span>
+                            <span class="tag">Web Design</span>
+                        </div>
+                        <h3 class="project-title">Personal Website</h3>
+                        <p class="project-desc">Portfolio profissional responsivo com design moderno e animações interativas.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-eye"></i> Live</span>
+                            <span><i class="fas fa-mobile-alt"></i> Responsive</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-2">Projeto 3</h3>
-                    <p>Biblioteca customizada em C.</p>
-                    <a href="https://github.com/Eduardo11k/project3" class="text-blue-500 hover:underline">Veja no GitHub</a>
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Eduardo11k/Libft_copia" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">C Library</span>
+                            <span class="tag">Systems</span>
+                        </div>
+                        <h3 class="project-title">Libft Custom</h3>
+                        <p class="project-desc">Biblioteca customizada em C com implementações de funções padrão e utilidades.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-cog"></i> Low Level</span>
+                            <span><i class="fas fa-book"></i> Documented</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer class="bg-gray-800 text-white p-4 text-center relative">
-        <p>&copy; 2025 Devwriter. Todos os direitos reservados.</p>
-        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Apoie a criação de mais conteúdo!', '#0a2e6b', 'W7W719GL7S');kofiwidget2.draw();</script> 
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>&lt;DevWriter /&gt;</h3>
+                    <p>Transformando código em soluções e palavras em conhecimento.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navegação</h4>
+                        <a href="index.html">Início</a>
+                        <a href="about.html">Sobre</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contato</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Social</h4>
+                        <a href="https://github.com/Eduardo11k"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://medium.com/@edumat"><i class="fab fa-medium"></i> Medium</a>
+                        <a href="https://www.linkedin.com/in/tavares-mateus-4bb889246"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Recursos</h4>
+                        <a href="privacity.html">Política de Privacidade</a>
+                        <a href="https://www.amazon.com.br/dp/B0DPPFPMX5"><i class="fab fa-amazon"></i> Meus eBooks</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DevWriter. Todos os direitos reservados.</p>
+                <div class="footer-tech"><span>Desenvolvido com</span><i class="fas fa-heart"></i><span>e muito café</span></div>
+            </div>
+        </div>
     </footer>
-    <script src="scripts.js"></script>
+    <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+    <script type='text/javascript'>kofiwidget2.init('Apoie a criação de mais conteúdo!', '#00d9ff', 'W7W719GL7S');kofiwidget2.draw();</script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({duration: 1000, once: true});</script>
+    <script src="app.js"></script>
+    <style>
+        .hero-simple{height:60vh;min-height:400px;}
+        .hero-subtitle-static{font-size:1.2rem;color:var(--gray);font-family:var(--font-mono);}
+    </style>
 </body>
-
 </html>

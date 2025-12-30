@@ -1,115 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contato com Eduardo, Programador, Escritor e Autor">
-    <meta name="keywords" content="Eduardo, Contato, Programador, Escritor">
-    <meta name="author" content="Eduardo">
-    <title>Contato - Eduardo</title>
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta name="description" content="Contato com Eduardo Mateus">
+    <title>Contato - DevWriter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7227762102795950"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7227762102795950" crossorigin="anonymous"></script>
 </head>
-
-<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-    <nav class="bg-gray-800 text-white p-4 fixed w-full z-10 top-0">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold">DevWriter</a>
-            <div>
-                <a href="index.html" class="mx-2">Início</a>
-                <a href="about.html" class="mx-2">Sobre Mim</a>
-                <a href="portfolio.html" class="mx-2">Portfólio</a>
-                <a href="blog.html" class="mx-2">Blog</a>
-                <a href="contact.html" class="mx-2">Contato</a>
+<body>
+    <div id="particles-js"></div>
+    <div class="logo-container">
+        <div class="logo-image">
+            <img src="pexels-cottonbro-5474037.jpg" alt="DevWriter Logo" id="logo">
+        </div>
+    </div>
+    <nav class="nav-main">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <span class="brand-bracket">&lt;</span>
+                <span class="brand-text">DevWriter</span>
+                <span class="brand-bracket">/&gt;</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i><span>Início</span></a>
+                <a href="about.html" class="nav-link"><i class="fas fa-user-circle"></i><span>Sobre</span></a>
+                <a href="portfolio.html" class="nav-link"><i class="fas fa-briefcase"></i><span>Portfolio</span></a>
+                <a href="blog.html" class="nav-link"><i class="fas fa-blog"></i><span>Blog</span></a>
             </div>
+            <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
         </div>
     </nav>
-
-    <!-- Vídeo de fundo -->
-    <header class="h-screen flex items-center justify-center relative">
-        <video class="absolute top-0 left-0 w-full h-full object-cover z-0" autoplay loop muted>
+    <header class="hero">
+        <video class="hero-video" autoplay loop muted playsinline>
             <source src="https://raw.githubusercontent.com/Eduardo11k/eduardo11k.github.io/main/5495781-uhd_2560_1080_30fps.mp4" type="video/mp4">
-            Seu navegador não suporta o elemento de vídeo.
         </video>
-        
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="text-center z-10">
-            <h1 class="text-5xl font-bold mb-4 text-white">Entre em Contato</h1>
-            <p class="text-xl mb-8 text-white">Gostou do meu trabalho? Fique à vontade para entrar em contato!</p>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-glitch" data-text="CONTATO">CONTATO</div>
+            <p class="hero-subtitle-static">Vamos trabalhar juntos!</p>
         </div>
     </header>
-
-    <main class="container mx-auto p-4 mt-16">
-        <section class="my-12">
-            <h2 class="text-3xl font-bold mb-4">Formulário de Contato</h2>
-            <form action="https://formspree.io/f/xaneaadn" method="POST" class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg" id="contato-form">
-                <!-- Honeypot -->
-                <input type="text" name="_honey" style="display:none">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="#">
-
-                <div class="mb-4">
-                    <label for="nome" class="block text-xl font-medium">Nome</label>
-                    <input type="text" id="nome" name="nome" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+    <section class="section contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <span class="section-tag">// Entre em Contato</span>
+                    <h2 class="section-title">Vamos <span class="highlight">Conversar</span></h2>
+                    <p class="contact-text">Estou disponível para projetos freelance, consultorias e colaborações. Entre em contato através do formulário ou das redes sociais abaixo.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>eduardomateustvs@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>Luanda, Angola</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/tavaresmateus1/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/@edumateus11"><i class="fab fa-twitter"></i></a>
+                        <a href="https://discord.gg/CwfRJpPt"><i class="fab fa-discord"></i></a>
+                        <a href="https://github.com/Eduardo11k"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
-
-                <div class="mb-4">
-                    <label for="email" class="block text-xl font-medium">E-mail</label>
-                    <input type="email" id="email" name="email" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form action="https://formspree.io/f/xaneaadn" method="POST" class="contact-form" id="contato-form">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="#">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" id="assunto" name="assunto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                        </div>
+                        <div id="mensagem-sucesso" class="hidden success-message">
+                            <i class="fas fa-check-circle"></i>
+                            Obrigado! Sua mensagem foi enviada com sucesso.
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <span>Enviar Mensagem</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
                 </div>
-
-                <div class="mb-4">
-                    <label for="assunto" class="block text-xl font-medium">Assunto</label>
-                    <input type="text" id="assunto" name="assunto" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                </div>
-
-                <div class="mb-4">
-                    <label for="mensagem" class="block text-xl font-medium">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" rows="4" class="w-full p-3 rounded-md border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
-                </div>
-
-                <!-- Mensagem de sucesso -->
-                <div id="mensagem-sucesso" class="hidden text-green-500 text-center font-semibold mb-4">
-                    Obrigado! Sua mensagem foi enviada com sucesso.
-                </div>
-
-                <div class="text-center">
-                    <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
-                        Enviar Mensagem
-                    </button>
-                </div>
-            </form>
-        </section>
-
-        <!-- Redes Sociais -->
-        <section class="my-12 text-center">
-            <h2 class="text-3xl font-bold mb-4">Conecte-se Comigo</h2>
-            <div class="flex justify-center gap-6">
-                <a href="https://www.instagram.com/tavaresmateus1/" target="_blank" class="text-blue-500 hover:text-blue-700">
-                    <i class="fab fa-instagram fa-2x"></i>
-                </a>
-                <a href="https://x.com/@edumateus11" target="_blank" class="text-blue-500 hover:text-blue-700">
-                    <i class="fab fa-twitter fa-2x"></i>
-                </a>
-                <a href="https://discord.gg/CwfRJpPt" target="_blank" class="text-blue-500 hover:text-blue-700">
-                    <i class="fab fa-discord fa-2x"></i>
-                </a>
             </div>
-        </section>
-    </main>
-
-    <footer class="bg-gray-800 text-white p-4 text-center relative">
-        <p>&copy; 2025 Devwriter. Todos os direitos reservados.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>&lt;DevWriter /&gt;</h3>
+                    <p>Transformando código em soluções e palavras em conhecimento.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navegação</h4>
+                        <a href="index.html">Início</a>
+                        <a href="about.html">Sobre</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contato</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Social</h4>
+                        <a href="https://github.com/Eduardo11k"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://medium.com/@edumat"><i class="fab fa-medium"></i> Medium</a>
+                        <a href="https://www.linkedin.com/in/tavares-mateus-4bb889246"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Recursos</h4>
+                        <a href="privacity.html">Política de Privacidade</a>
+                        <a href="https://www.amazon.com.br/dp/B0DPPFPMX5"><i class="fab fa-amazon"></i> Meus eBooks</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DevWriter. Todos os direitos reservados.</p>
+                <div class="footer-tech"><span>Desenvolvido com</span><i class="fas fa-heart"></i><span>e muito café</span></div>
+            </div>
+        </div>
     </footer>
-
-    
-
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({duration: 1000, once: true});</script>
     <script src="sucess_message.js"></script>
+    <script src="app.js"></script>
+    <style>
+        .hero-subtitle-static{font-size:1.2rem;color:var(--gray);font-family:var(--font-mono);}
+        .contact-section{background:var(--dark);}
+        .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;}
+        .contact-info{padding:2rem 0;}
+        .contact-text{color:var(--gray);line-height:1.8;margin:2rem 0;}
+        .contact-methods{display:flex;flex-direction:column;gap:2rem;margin:3rem 0;}
+        .contact-method{display:flex;align-items:start;gap:1.5rem;}
+        .contact-method i{font-size:2rem;color:var(--primary);margin-top:0.5rem;}
+        .contact-method h4{color:var(--light);margin-bottom:0.5rem;}
+        .contact-method p{color:var(--gray);}
+        .social-links{display:flex;gap:1rem;}
+        .social-links a{width:50px;height:50px;border:2px solid var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.3rem;transition:var(--transition);}
+        .social-links a:hover{background:var(--primary);color:var(--dark);transform:translateY(-5px);}
+        .contact-form-wrapper{background:rgba(0,217,255,0.03);border:1px solid rgba(0,217,255,0.1);border-radius:16px;padding:2.5rem;}
+        .contact-form{display:flex;flex-direction:column;gap:1.5rem;}
+        .form-group{display:flex;flex-direction:column;gap:0.5rem;}
+        .form-group label{color:var(--gray-light);font-family:var(--font-mono);font-size:0.9rem;}
+        .form-group input,.form-group textarea{background:rgba(0,217,255,0.05);border:1px solid rgba(0,217,255,0.2);border-radius:8px;padding:1rem;color:var(--light);font-family:var(--font-primary);font-size:1rem;transition:var(--transition);}
+        .form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--primary);background:rgba(0,217,255,0.1);}
+        .form-group textarea{resize:vertical;min-height:120px;}
+        .success-message{background:rgba(0,255,100,0.1);border:1px solid rgba(0,255,100,0.3);color:#00ff64;padding:1rem;border-radius:8px;display:flex;align-items:center;gap:0.8rem;font-family:var(--font-mono);}
+        .hidden{display:none!important;}
+        @media (max-width:768px){
+            .contact-grid{grid-template-columns:1fr;}
+        }
+    </style>
 </body>
-
 </html>

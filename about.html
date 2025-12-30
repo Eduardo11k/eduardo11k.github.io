@@ -1,61 +1,508 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Eduardo">
+    <meta name="description" content="Sobre Eduardo Mateus - Desenvolvedor Full Stack e Escritor Técnico">
     <title>Sobre Mim - DevWriter</title>
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7227762102795950"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7227762102795950" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-    <nav class="bg-gray-800 text-white p-4 fixed w-full z-10 top-0">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold">DevWriter</a>
-            <div>
-                <a href="index.html" class="mx-2">Início</a>
-                <a href="portfolio.html" class="mx-2">Portfólio</a>
-                <a href="blog.html" class="mx-2">Blog</a>
-                <a href="contact.html" class="mx-2">Contato</a>
+<body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Logo Section -->
+    <div class="logo-container">
+        <div class="logo-image">
+            <img src="pexels-cottonbro-5474037.jpg" alt="DevWriter Logo" id="logo">
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-main">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <span class="brand-bracket">&lt;</span>
+                <span class="brand-text">DevWriter</span>
+                <span class="brand-bracket">/&gt;</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Início</span>
+                </a>
+                <a href="portfolio.html" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Portfolio</span>
+                </a>
+                <a href="blog.html" class="nav-link">
+                    <i class="fas fa-blog"></i>
+                    <span>Blog</span>
+                </a>
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contato</span>
+                </a>
             </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
-    <main class="container mx-auto p-4 mt-16">
-        <section class="my-12">
-            <h1 class="text-5xl font-bold mb-4">Sobre Mim</h1>
-            <div class="flex flex-col md:flex-row items-center">
-                <img src="https://raw.githubusercontent.com/Eduardo11k/eduardo11k.github.io/main/IMG-20250402-WA0001.jpg" alt="Eduardo" class="rounded-full w-48 h-48 mb-4 md:mb-0 md:mr-4">
-                <p class="text-xl">Olá! Eu sou Eduardo, um profissional em programção, escrita de artigos e ebooks com um tempo de experiência. Tenho paixão por tecnologia, inovação , histórias e assuntos didáticos.. Siga-me nas redes sociais para saber mais!</p>
-            </div>
-            <div class="mt-4"><a href="https://github.com/Eduardo11k" class="mx-2">
-                    <i class="fab fa-github fa-lg"></i>
-                </a>
-                
-                <a href="https://medium.com/@edumat" class="mx-2">
-                    <i class="fab fa-medium fa-lg"></i>
-                </a>
-                
-                <a href="https://www.amazon.com.br/dp/B0DPPFPMX5" class="mx-2">
-                    <i class="fab fa-amazon fa-lg"></i>
-                </a>
-                
-                <a href="https://www.linkedin.com/in/tavares-mateus-4bb889246?utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="mx-2">
-                    <i class="fab fa-linkedin fa-lg"></i>
-                </a>
 
+    <!-- Hero Section -->
+    <header class="hero hero-simple">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-glitch" data-text="SOBRE MIM">SOBRE MIM</div>
+            <p class="hero-subtitle-static">Conheça minha história e jornada</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section about-content">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-wrapper">
+                        <img src="https://raw.githubusercontent.com/Eduardo11k/eduardo11k.github.io/main/IMG-20250402-WA0001.jpg" alt="Eduardo Mateus">
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+                
+                <div class="about-text" data-aos="fade-left">
+                    <span class="section-tag">// Introdução</span>
+                    <h2 class="section-title">Quem sou <span class="highlight">eu</span></h2>
+                    
+                    <div class="about-description">
+                        <p>Olá! Eu sou <strong>Eduardo Mateus</strong>, um profissional apaixonado por programação, escrita de artigos e criação de eBooks.</p>
+                        
+                        <p>Com experiência sólida em desenvolvimento web e mobile, combino habilidades técnicas com a capacidade de comunicar conceitos complexos de forma clara e acessível.</p>
+                        
+                        <p>Minha jornada no mundo da tecnologia me levou a explorar diversas áreas, desde o desenvolvimento de aplicações robustas até a criação de conteúdo educacional que ajuda outros desenvolvedores a crescerem em suas carreiras.</p>
+                        
+                        <p>Tenho paixão por <strong>tecnologia</strong>, <strong>inovação</strong>, <strong>histórias</strong> e <strong>assuntos didáticos</strong>. Acredito que a melhor forma de aprender é ensinando, e por isso dedico parte do meu tempo a compartilhar conhecimento através de artigos, tutoriais e eBooks.</p>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-box">
+                            <div class="stat-value">5+</div>
+                            <div class="stat-label">Anos de Experiência</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-value">50+</div>
+                            <div class="stat-label">Projetos Concluídos</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-value">30+</div>
+                            <div class="stat-label">Artigos Publicados</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
-    <footer class="bg-gray-800 text-white p-4 text-center relative">
-        <p>&copy; 2025 Devwriter. Todos os direitos reservados.</p>
-        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Apoie a criação de mais conteúdo!', '#0a2e6b', 'W7W719GL7S');kofiwidget2.draw();</script> 
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Habilidades</span>
+                <h2 class="section-title">Tech <span class="highlight">Stack</span></h2>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-code"></i>
+                        Frontend
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5 / CSS3</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React / Vue.js</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tailwind CSS</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-server"></i>
+                        Backend
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js / Express</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python / Django</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL / MongoDB</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 82%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">REST APIs</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-mobile-alt"></i>
+                        Mobile & Other
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Kotlin / Android</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 87%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git / GitHub</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Technical Writing</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Section -->
+    <section class="section social-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Conecte-se</span>
+                <h2 class="section-title">Redes <span class="highlight">Sociais</span></h2>
+            </div>
+            
+            <div class="social-grid">
+                <a href="https://github.com/Eduardo11k" class="social-card" data-aos="zoom-in">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>Veja meus projetos open source</p>
+                </a>
+                
+                <a href="https://medium.com/@edumat" class="social-card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fab fa-medium"></i>
+                    <h3>Medium</h3>
+                    <p>Leia meus artigos técnicos</p>
+                </a>
+                
+                <a href="https://www.amazon.com.br/dp/B0DPPFPMX5" class="social-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fab fa-amazon"></i>
+                    <h3>Amazon</h3>
+                    <p>Confira meus eBooks</p>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/tavares-mateus-4bb889246" class="social-card" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Conecte-se profissionalmente</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>&lt;DevWriter /&gt;</h3>
+                    <p>Transformando código em soluções e palavras em conhecimento.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navegação</h4>
+                        <a href="index.html">Início</a>
+                        <a href="about.html">Sobre</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contato</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Social</h4>
+                        <a href="https://github.com/Eduardo11k"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://medium.com/@edumat"><i class="fab fa-medium"></i> Medium</a>
+                        <a href="https://www.linkedin.com/in/tavares-mateus-4bb889246"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Recursos</h4>
+                        <a href="privacity.html">Política de Privacidade</a>
+                        <a href="https://www.amazon.com.br/dp/B0DPPFPMX5"><i class="fab fa-amazon"></i> Meus eBooks</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 DevWriter. Todos os direitos reservados.</p>
+                <div class="footer-tech">
+                    <span>Desenvolvido com</span>
+                    <i class="fas fa-heart"></i>
+                    <span>e muito café</span>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script src="scripts.js"></script>
+
+    <!-- Ko-fi Widget -->
+    <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+    <script type='text/javascript'>kofiwidget2.init('Apoie a criação de mais conteúdo!', '#00d9ff', 'W7W719GL7S');kofiwidget2.draw();</script>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script src="app.js"></script>
+    
+    <style>
+        /* Additional styles for About page */
+        .hero-simple {
+            height: 60vh;
+            min-height: 400px;
+        }
+        
+        .hero-subtitle-static {
+            font-size: 1.2rem;
+            color: var(--gray);
+            font-family: var(--font-mono);
+        }
+        
+        .about-content {
+            background: var(--dark);
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .image-wrapper {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 20px;
+        }
+        
+        .image-border {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 2px solid var(--primary);
+            border-radius: 20px;
+            z-index: -1;
+        }
+        
+        .about-description p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: var(--gray);
+        }
+        
+        .about-description strong {
+            color: var(--primary);
+        }
+        
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .stat-box {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(0, 217, 255, 0.05);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 12px;
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: var(--font-mono);
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-top: 0.5rem;
+        }
+        
+        /* Skills Section */
+        .skills-section {
+            background: var(--darker);
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+        
+        .skill-category {
+            background: rgba(0, 217, 255, 0.03);
+            border: 1px solid rgba(0, 217, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+        }
+        
+        .skill-category-title {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.5rem;
+            color: var(--light);
+            margin-bottom: 2rem;
+        }
+        
+        .skill-category-title i {
+            color: var(--primary);
+            font-size: 1.8rem;
+        }
+        
+        .skill-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .skill-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .skill-name {
+            color: var(--gray-light);
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+        }
+        
+        .skill-bar {
+            height: 8px;
+            background: rgba(0, 217, 255, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            background: var(--gradient-primary);
+            border-radius: 4px;
+            transition: width 1s ease;
+        }
+        
+        /* Social Section */
+        .social-section {
+            background: var(--dark);
+        }
+        
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .social-card {
+            background: rgba(0, 217, 255, 0.03);
+            border: 1px solid rgba(0, 217, 255, 0.1);
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            text-decoration: none;
+            transition: var(--transition-slow);
+        }
+        
+        .social-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 60px rgba(0, 217, 255, 0.2);
+        }
+        
+        .social-card i {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .social-card h3 {
+            font-size: 1.5rem;
+            color: var(--light);
+            margin-bottom: 0.5rem;
+        }
+        
+        .social-card p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </body>
 
 </html>
