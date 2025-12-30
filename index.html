@@ -1,129 +1,417 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eduardo's Professional Website">
-    <meta name="keywords" content="Eduardo, Professional, Programmer, eBook Writer, Medium Articles">
-    <meta name="author" content="Eduardo">
-    <meta property="og:title" content="Eduardo's Professional Website">
-    <meta property="og:description" content="Showcasing Eduardo's services as a programmer, eBook writer, and Medium article author.">
-    <meta property="og:image" content="path/to/image.jpg">
+    <meta name="description" content="Eduardo Mateus - Desenvolvedor Full Stack, Escritor Técnico e Criador de Conteúdo">
+    <meta name="keywords" content="Eduardo, Desenvolvedor, Programador, eBook Writer, Medium Articles, Full Stack">
+    <meta name="author" content="Eduardo Mateus">
+    <meta property="og:title" content="Eduardo Mateus | DevWriter">
+    <meta property="og:description" content="Portfolio profissional de Eduardo Mateus - Desenvolvimento, Escrita Técnica e Inovação">
+    <meta property="og:image" content="IMG-20250402-WA0001.jpg">
     <meta property="og:url" content="https://eduardo11k.github.io">
-    <title>Eduardo's Professional Website</title>
+    <title>Eduardo Mateus | DevWriter</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7227762102795950"
-     crossorigin="anonymous"></script>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7227762102795950" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-    <nav class="bg-gray-800 text-white p-4 fixed w-full z-10 top-0">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold">DevWriter</a>
-            <div>
-                <a href="about.html" class="mx-2">Sobre Mim</a>
-                <a href="portfolio.html" class="mx-2">Portfólio</a>
-                <a href="blog.html" class="mx-2">Blog</a>
-                <a href="contact.html" class="mx-2">Contato</a>
-                <!-- <a href="check_payment_page.html" class="mx-2">Pagina de checagemm de pagamento</a>  opção pra mais funções futuras-->
+<body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Logo Section -->
+    <div class="logo-container">
+        <div class="logo-image">
+            <img src="pexels-cottonbro-5474037.jpg" alt="DevWriter Logo" id="logo">
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-main">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <span class="brand-bracket">&lt;</span>
+                <span class="brand-text">DevWriter</span>
+                <span class="brand-bracket">/&gt;</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="about.html" class="nav-link">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Sobre</span>
+                </a>
+                <a href="portfolio.html" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Portfolio</span>
+                </a>
+                <a href="blog.html" class="nav-link">
+                    <i class="fas fa-blog"></i>
+                    <span>Blog</span>
+                </a>
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contato</span>
+                </a>
             </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Vídeo de fundo -->
-    <header class="h-screen flex items-center justify-center relative">
-        <video class="absolute top-0 left-0 w-full h-full object-cover z-0" autoplay loop muted>
-        <source src="https://raw.githubusercontent.com/Eduardo11k/eduardo11k.github.io/main/3130284-uhd_3840_2160_30fps.mp4" type="video/mp4">
-        Seu navegador não suporta o elemento de vídeo.
-      </video>
-
+    <!-- Hero Section -->
+    <header class="hero">
+        <video class="hero-video" autoplay loop muted playsinline>
+            <source src="https://raw.githubusercontent.com/Eduardo11k/eduardo11k.github.io/main/3130284-uhd_3840_2160_30fps.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
         
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="text-center z-10">
-            <h1 class="text-5xl font-bold mb-4 text-white">Bem-vindo ao meu site </h1>
-            <p class="text-xl mb-8 text-white">Eduardo Mateus : Programador, Escritor de eBooks e Autor no Medium</p>
-            <a href="https://ko-fi.com/eduardomateus" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Contrate Meus Serviços</a>
+        <div class="hero-content">
+            <div class="hero-glitch" data-text="EDUARDO MATEUS">EDUARDO MATEUS</div>
+            <div class="hero-subtitle">
+                <span class="typing-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            
+            <div class="hero-stack">
+                <span class="stack-item">Full Stack Dev</span>
+                <span class="stack-divider">•</span>
+                <span class="stack-item">Technical Writer</span>
+                <span class="stack-divider">•</span>
+                <span class="stack-item">Content Creator</span>
+            </div>
+            
+            <div class="hero-cta">
+                <a href="https://ko-fi.com/eduardomateus" class="btn-primary">
+                    <span>Contratar Serviços</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="portfolio.html" class="btn-secondary">
+                    <span>Ver Portfolio</span>
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-icon"></div>
+                <span>Scroll</span>
+            </div>
         </div>
     </header>
 
-    <main class="container mx-auto p-4">
-        <section class="my-12">
-            <h2 class="text-3xl font-bold mb-4">Serviços</h2>
-            <div class="grid md:grid-cols-3 gap-4">
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-2">Desenvolvimento Web e Android</h3>
-                    <p>Criação de sites, bots e aplicativos otimizados.</p>
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Serviços</span>
+                <h2 class="section-title">Expertise <span class="highlight">Técnica</span></h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Desenvolvimento Web & Mobile</h3>
+                    <p class="service-desc">Criação de aplicações web modernas, APIs RESTful e apps Android otimizados usando tecnologias de ponta.</p>
+                    <ul class="service-tech">
+                        <li>React / Vue.js</li>
+                        <li>Node.js / Express</li>
+                        <li>Kotlin / Android</li>
+                        <li>Python / Django</li>
+                    </ul>
+                    <div class="service-number">01</div>
                 </div>
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-2">Escrita de eBooks</h3>
-                    <p>Autor de eBooks sobre diversas áreas de conhecimento.</p>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="service-title">Escrita Técnica & eBooks</h3>
+                    <p class="service-desc">Produção de conteúdo técnico de alta qualidade, documentação e eBooks sobre programação e tecnologia.</p>
+                    <ul class="service-tech">
+                        <li>Technical Writing</li>
+                        <li>Documentation</li>
+                        <li>eBook Publishing</li>
+                        <li>Content Strategy</li>
+                    </ul>
+                    <div class="service-number">02</div>
                 </div>
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-2">Artigos no Medium</h3>
-                    <p>Publicação de artigos informativos e educacionais no Medium.</p>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <h3 class="service-title">Artigos & Blog Posts</h3>
+                    <p class="service-desc">Criação de artigos informativos e educacionais para Medium e outras plataformas de conteúdo técnico.</p>
+                    <ul class="service-tech">
+                        <li>Medium Articles</li>
+                        <li>Technical Blogging</li>
+                        <li>SEO Optimization</li>
+                        <li>Content Marketing</li>
+                    </ul>
+                    <div class="service-number">03</div>
                 </div>
             </div>
-        </section>
-        <section class="my-12">
-            <h2 class="text-3xl font-bold mb-4">Projetos Recentes</h2>
-            <div class="grid md:grid-cols-3 gap-4">
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-2">Projeto 1</h3>
-                    <p>Bobhelper- Bot Discord</p>
-                    <a href="https://github.com/Eduardo11k/Bobhelper" class="text-blue-500 hover:underline">Veja no GitHub</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Projetos</span>
+                <h2 class="section-title">Trabalhos <span class="highlight">Recentes</span></h2>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-aos="zoom-in">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Eduardo11k/Bobhelper" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Discord Bot</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <h3 class="project-title">Bobhelper</h3>
+                        <p class="project-desc">Bot Discord multifuncional com comandos de moderação, música e utilidades para servidores.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> Featured</span>
+                            <span><i class="fas fa-code-branch"></i> Open Source</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-2">Projeto 2</h3>
-                    <p>Criação do meu website - Euzinho</p>
-                    <a href="https://github.com/Eduardo11k/eduardo11k.github.io" class="text-blue-500 hover:underline">Veja no GitHub</a>
+                
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Eduardo11k/eduardo11k.github.io" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Portfolio</span>
+                            <span class="tag">Web Design</span>
+                        </div>
+                        <h3 class="project-title">Personal Website</h3>
+                        <p class="project-desc">Portfolio profissional responsivo com design moderno e animações interativas.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-eye"></i> Live</span>
+                            <span><i class="fas fa-mobile-alt"></i> Responsive</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-2">Projeto 3</h3>
-                    <p>Biblioteca customizada em C</p>
-                    <a href="https://github.com/Eduardo11k/Libft_copia" class="text-blue-500 hover:underline">Veja no GitHub</a>
+                
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Eduardo11k/Libft_copia" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">C Library</span>
+                            <span class="tag">Systems</span>
+                        </div>
+                        <h3 class="project-title">Libft Custom</h3>
+                        <p class="project-desc">Biblioteca customizada em C com implementações de funções padrão e utilidades.</p>
+                        <div class="project-stats">
+                            <span><i class="fas fa-cog"></i> Low Level</span>
+                            <span><i class="fas fa-book"></i> Documented</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="my-12">
-            <h2 class="text-3xl font-bold mb-4">Artigos Populares</h2>
-            <div class="grid md:grid-cols-3 gap-4">
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-2">Artigo 1</h3>
-                    <p>Descrição do artigo 1.</p>
-                    <a href="https://medium.com/@edumat/kotlin-and-its-7-superpowers-882f3fe1f271?sk=234bd8b679eebc289857e7e54aa55b94" class="text-blue-500 hover:underline">Kotlin e seus superpoderes</a>
+            
+            <div class="section-cta">
+                <a href="portfolio.html" class="btn-outline">
+                    Ver Todos os Projetos
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="section blog" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Blog</span>
+                <h2 class="section-title">Artigos <span class="highlight">Populares</span></h2>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card" data-aos="fade-right">
+                    <div class="blog-badge">Featured</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-clock"></i> 8 min read</span>
+                        </div>
+                        <h3 class="blog-title">Kotlin e seus 7 Superpoderes</h3>
+                        <p class="blog-excerpt">Explorando as funcionalidades mais poderosas da linguagem Kotlin para desenvolvimento Android moderno.</p>
+                        <a href="https://medium.com/@edumat/kotlin-and-its-7-superpowers-882f3fe1f271" class="blog-link">
+                            Ler Artigo <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card" data-aos="fade-right" data-aos-delay="100">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3 class="blog-title">DeepSeek: A Nova Era da IA</h3>
+                        <p class="blog-excerpt">Análise profunda sobre o DeepSeek e seu impacto no futuro da inteligência artificial.</p>
+                        <a href="https://medium.com/@edumat/deepseek-the-new-era-of-ai-8624554b44e7" class="blog-link">
+                            Ler Artigo <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card" data-aos="fade-right" data-aos-delay="200">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-clock"></i> 4 min read</span>
+                        </div>
+                        <h3 class="blog-title">Sobre Mim</h3>
+                        <p class="blog-excerpt">Minha jornada no mundo da tecnologia, desenvolvimento e escrita técnica.</p>
+                        <a href="https://medium.com/illumination/about-me-29d54dd2c565" class="blog-link">
+                            Ler Artigo <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="section-cta">
+                <a href="blog.html" class="btn-outline">
+                    Ver Todos os Artigos
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Projetos Concluídos</div>
                 </div>
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-2">Artigo 2</h3>
-                    <p>Descrição do artigo 2.</p>
-                    <a href="https://medium.com/illumination/about-me-29d54dd2c565" class="text-blue-500 hover:underline">Minha vida</a>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number" data-target="30">0</div>
+                    <div class="stat-label">Artigos Publicados</div>
                 </div>
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-2">Artigo 3</h3>
-                    <p>Descrição do artigo 3.</p>
-                    <a href="https://medium.com/@edumat/deepseek-the-new-era-of-ai-8624554b44e7" class="text-blue-500 hover:underline">A super IA:Deeepseak</a>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">eBooks Lançados</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">Clientes Satisfeitos</div>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer class="bg-gray-800 text-white p-4 text-center relative">
-        <p>&copy; 2025 Devwriter. Todos os direitos reservados.</p>
-        <a href="/privacity.html">Política de Privacidade</a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 class="cta-title">Pronto para Iniciar seu Projeto?</h2>
+                <p class="cta-text">Vamos transformar suas ideias em realidade. Entre em contato e discuta seu próximo projeto.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary">
+                        <span>Entrar em Contato</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                    <a href="https://ko-fi.com/eduardomateus" class="btn-secondary">
+                        <span>Contratar Agora</span>
+                        <i class="fas fa-coffee"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>&lt;DevWriter /&gt;</h3>
+                    <p>Transformando código em soluções e palavras em conhecimento.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navegação</h4>
+                        <a href="about.html">Sobre</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contato</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Social</h4>
+                        <a href="https://github.com/Eduardo11k"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://medium.com/@edumat"><i class="fab fa-medium"></i> Medium</a>
+                        <a href="https://www.linkedin.com/in/tavares-mateus-4bb889246"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Recursos</h4>
+                        <a href="privacity.html">Política de Privacidade</a>
+                        <a href="https://www.amazon.com.br/dp/B0DPPFPMX5"><i class="fab fa-amazon"></i> Meus eBooks</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 DevWriter. Todos os direitos reservados.</p>
+                <div class="footer-tech">
+                    <span>Desenvolvido com</span>
+                    <i class="fas fa-heart"></i>
+                    <span>e muito café</span>
+                </div>
+            </div>
+        </div>
     </footer>
 
+    <!-- Ko-fi Widget -->
     <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
     <script>
         kofiWidgetOverlay.draw('eduardomateus', {
             'type': 'floating-chat',
-            'floating-chat.donateButton.text': 'Apoie aqui',
-            'floating-chat.donateButton.background-color': '#1D2D44',
-            'floating-chat.donateButton.text-color': '#fff'
+            'floating-chat.donateButton.text': 'Apoie',
+            'floating-chat.donateButton.background-color': '#00d9ff',
+            'floating-chat.donateButton.text-color': '#000'
         });
     </script>
 
-    <script src="./app.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="app.js"></script>
 </body>
-
 </html>
