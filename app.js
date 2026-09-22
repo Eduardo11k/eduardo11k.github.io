@@ -1,4 +1,34 @@
 // ===================================
+// CLEAN URLS (Hides .html and /index from route)
+// ===================================
+(function() {
+    if (window.location.protocol.startsWith('http')) {
+        const path = window.location.pathname;
+        if (path.endsWith('.html') || path.endsWith('/index')) {
+            let cleanPath = path.replace(/\.html$/, '');
+            if (cleanPath.endsWith('/index')) {
+                cleanPath = cleanPath.slice(0, -6) || '/';
+            }
+            window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+        }
+    } else if (window.location.protocol === 'file:') {
+        // Fallback when opening via file:/// directly in browser
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href]').forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && !href.startsWith('http') && !href.startsWith('#') && !href.startsWith('mailto:') && !href.endsWith('.html')) {
+                    if (href === './' || href === '/') {
+                        link.setAttribute('href', 'index.html');
+                    } else if (!href.endsWith('/')) {
+                        link.setAttribute('href', href + '.html');
+                    }
+                }
+            });
+        });
+    }
+})();
+
+// ===================================
 // NAVIGATION
 // ===================================
 document.addEventListener('DOMContentLoaded', function() {
