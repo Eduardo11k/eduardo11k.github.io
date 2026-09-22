@@ -37,10 +37,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const typingElement = document.querySelector('.typing-text');
     if (typingElement) {
         const texts = [
-            'Full Stack Developer',
-            'Technical Writer',
-            'Content Creator',
-            'Problem Solver'
+            'Mobile Android Developer',
+            'Docker & DevOps',
+            'Web Developer',
+            'Software Engineer'
         ];
         let textIndex = 0;
         let charIndex = 0;
